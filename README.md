@@ -97,6 +97,14 @@ runs the two CLI lanes (Grok + Codex) in parallel, normalizes their transcripts,
 each lane on a usability check; the same script serves both the first round and the
 per-lane peer-revision round via an output prefix.
 
+## Examples
+
+[`examples/sancho-phase0-kit/`](examples/sancho-phase0-kit/) is an end-to-end demonstration:
+a full operator kit produced by running the skill in three phases — **orchestrate** (build a
+work-breakdown), **execute** (two models build the workstreams in parallel), **review** (a
+council audits the result and adjudicates every disagreement against the artifact). It shows
+the intended pattern: council to decide → direct execution to build → council to review.
+
 ## Research basis
 
 - Mixture-of-Agents — https://github.com/togethercomputer/MoA
